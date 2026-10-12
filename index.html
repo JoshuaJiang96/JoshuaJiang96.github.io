@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yue Jiang | Purdue Industrial Engineering</title>
+<meta name="description" content="Yue Jiang, Ph.D. candidate in Industrial Engineering at Purdue University. Research on AI for next-generation manufacturing: adaptive sampling, active learning, reinforcement learning, and LLM agents for root cause analysis.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d2330;
+    --muted: #5b6475;
+    --accent: #8e6f3e;      /* Purdue-inspired gold, darkened for contrast */
+    --accent-soft: #f5efe4;
+    --rule: #e4e6eb;
+    --card: #fafbfc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --fg: #e6e8ec;
+      --muted: #a2a9b6;
+      --accent: #d4b47a;
+      --accent-soft: #2a2620;
+      --rule: #2a2f38;
+      --card: #1a1e24;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 Georgia, "Times New Roman", serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
+    font: 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  nav .inner {
+    max-width: 880px; margin: 0 auto; padding: 14px 20px;
+    display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center;
+  }
+  nav .brand { font-weight: 600; color: var(--fg); margin-right: auto; }
+  nav a.link { color: var(--muted); }
+  nav a.link:hover { color: var(--accent); text-decoration: none; }
+  main { max-width: 880px; margin: 0 auto; padding: 0 20px 64px; }
+  header.hero { padding: 48px 0 28px; border-bottom: 1px solid var(--rule); }
+  h1 { font-size: 2.3rem; margin: 0 0 6px; line-height: 1.2; }
+  .role { color: var(--muted); margin: 0 0 14px; font-size: 1.05rem; }
+  .tagline {
+    display: inline-block;
+    background: var(--accent-soft); color: var(--accent);
+    font: 600 14px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: .04em; text-transform: uppercase;
+    padding: 6px 10px; border-radius: 4px; margin-bottom: 18px;
+  }
+  .links {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    font: 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .links a {
+    border: 1px solid var(--rule); border-radius: 6px; padding: 9px 14px; color: var(--fg);
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+  .market {
+    margin-top: 22px; padding: 14px 16px;
+    border-left: 3px solid var(--accent); background: var(--card);
+  }
+  section { padding-top: 40px; }
+  h2 {
+    font: 600 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--accent);
+    margin: 0 0 16px;
+  }
+  h3 { font-size: 1.12rem; margin: 22px 0 4px; }
+  p { margin: 0 0 12px; }
+  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0 8px; }
+  .pillar { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; }
+  .pillar b { display: block; margin-bottom: 4px; }
+  .pillar span { color: var(--muted); font-size: .95rem; }
+  ol.pubs, ul.plain { padding-left: 1.2em; margin: 0; }
+  ol.pubs li, ul.plain li { margin-bottom: 12px; }
+  .me { font-weight: 700; }
+  .venue { font-style: italic; }
+  .note { color: var(--muted); font-size: .95rem; }
+  .award { color: var(--accent); font-size: .95rem; }
+  .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .row .when { color: var(--muted); white-space: nowrap; }
+  footer {
+    max-width: 880px; margin: 0 auto; padding: 24px 20px 40px;
+    border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem;
+  }
+  @media (max-width: 720px) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.9rem; }
+    .pillars { grid-template-columns: 1fr; }
+    nav .brand { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="brand" href="#top">Yue Jiang</a>
+    <a class="link" href="#research">Research</a>
+    <a class="link" href="#publications">Publications</a>
+    <a class="link" href="#teaching">Teaching</a>
+    <a class="link" href="#mentoring">Mentoring</a>
+    <a class="link" href="cv.pdf">CV</a>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="tagline">AI for Next-Generation Manufacturing</div>
+    <h1>Yue Jiang</h1>
+    <p class="role">Ph.D. Candidate, Edwardson School of Industrial Engineering, Purdue University<br>
+      Advisor: Dr. Ana María Estrada Gómez</p>
+    <div class="links">
+      <a href="mailto:jiang905@purdue.edu">jiang905@purdue.edu</a>
+      <a href="cv.pdf">CV (PDF)</a>
+      <a href="https://www.linkedin.com/in/yue-jiang-71095b277/">LinkedIn</a>
+    </div>
+    <div class="market">
+      I am on the <b>2026&ndash;27 academic job market</b> for tenure-track faculty positions and expect to complete my Ph.D. in May 2027.
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I develop statistical and machine learning methods that turn complex system data into timely, reliable decisions. Modern manufacturing and engineered systems collect far more data than they can use, so the central question in my work is not how to collect more data, but how to convert the data we have into quality improvement efficiently, when sensing, expert labeling, and experimentation are all limited.</p>
+    <p>My research interests include large language model agents, reinforcement learning, active learning, adaptive sampling, and statistical process monitoring and control.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="pillars">
+      <div class="pillar"><b>Measurement-efficient monitoring</b><span>Adaptive sampling that decides where and when to measure for real-time anomaly detection.</span></div>
+      <div class="pillar"><b>Label-efficient diagnosis</b><span>Active learning that directs scarce expert labels to the observations that matter most.</span></div>
+      <div class="pillar"><b>Experiment-efficient control</b><span>Residual reinforcement learning that builds on engineering knowledge for run-to-run control.</span></div>
+    </div>
+
+    <h3>Adaptive sampling for monitoring</h3>
+    <p>I developed adaptive sampling strategies that combine predictive modeling with sequential decision-making, both for mobile sensing vehicles scanning a spatial field and for partially observed networks. Applications include wildfire detection, the IEEE 118-bus power grid, and the Wabash Heartland Innovation Network.</p>
+
+    <h3>Active learning for fault detection and diagnosis</h3>
+    <p>I developed an online active learning framework that allocates a limited labeling budget between recognizing known fault types and discovering new ones, validated on steel-plate and robot-execution fault diagnosis. This work began during my research visit to Georgia Tech ISyE with Dr. Xiaochen Xian.</p>
+
+    <h3>Residual reinforcement learning for process control</h3>
+    <p>I developed a specification-aware residual reinforcement learning framework for run-to-run control that treats existing engineering controllers as a strong starting point, demonstrated on deep reactive ion etching and chemical mechanical planarization processes in semiconductor manufacturing.</p>
+
+    <h3>What&rsquo;s next</h3>
+    <p>In the near term, I am developing <b>self-improving AI agents for root cause analysis</b> that ground their reasoning in quantitative process evidence, verify each hypothesized root cause before reporting it, defer to engineers when evidence is insufficient, and learn from their own failures. In the long term, I aim to build a framework for <b>decision-efficient closed-loop quality improvement</b> that integrates monitoring, diagnosis, and control.</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <h3>Journal articles</h3>
+    <ol class="pubs">
+      <li><span class="me">Jiang, Y.</span>, &amp; Estrada Gómez, A. M. (2026). An adaptive sampling strategy for online monitoring of partially observed networks. <span class="venue">Technometrics, 68</span>(2), 334&ndash;346. <a href="https://doi.org/10.1080/00401706.2025.2580634">DOI</a></li>
+      <li><span class="me">Jiang, Y.</span>, Xian, X., &amp; Estrada Gómez, A. M. (2026). An active learning strategy for online batch fault detection and diagnosis. <span class="venue">INFORMS Journal on Data Science</span>.</li>
+      <li><span class="me">Jiang, Y.</span>, &amp; Estrada Gómez, A. M. (2024). An adaptive sampling strategy for real-time anomaly detection with unmanned sensing vehicles. <span class="venue">Technometrics, 66</span>(3), 438&ndash;454. <a href="https://doi.org/10.1080/00401706.2024.2322645">DOI</a><br>
+        <span class="award">Winner, ASA SPES+Q&amp;P Student Paper Competition, 2024</span></li>
+      <li>Li, N., Fang, T., <span class="me">Jiang, Y.</span>, &amp; Zhang, Z. H. (2025). Robust valet charging for electric vehicles with uncertain service time. <span class="venue">Optimization and Engineering, 26</span>(3), 1895&ndash;1931. <a href="https://doi.org/10.1007/s11081-025-09960-5">DOI</a></li>
+      <li>Li, N., <span class="me">Jiang, Y.</span>, &amp; Zhang, Z. H. (2021). A two-stage ambiguous stochastic program for electric vehicle charging station location problem with valet charging service. <span class="venue">Transportation Research Part B: Methodological, 153</span>, 149&ndash;171. <a href="https://doi.org/10.1016/j.trb.2021.09.006">DOI</a></li>
+    </ol>
+    <h3>Working papers</h3>
+    <ul class="plain">
+      <li><span class="me">Jiang, Y.</span>, &amp; Estrada Gómez, A. M. A specification-aware residual reinforcement learning-based run-to-run control framework for semiconductor manufacturing processes. <span class="note">In preparation.</span></li>
+      <li><span class="me">Jiang, Y.</span>, Goñi, J., &amp; Estrada Gómez, A. M. Online structural change-point detection of high-dimensional streaming data via sparse spectral graphical models. <span class="note">In preparation.</span></li>
+    </ul>
+    <h3>Selected presentations</h3>
+    <ul class="plain">
+      <li>Invited talk, Technometrics Invited Session, 2025 INFORMS Annual Meeting, Atlanta, GA.</li>
+      <li>Oral presentations at the INFORMS Annual Meeting (2023, 2024), IISE Annual Conference (2023, 2025), and Joint Statistical Meetings (2024).</li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="plain">
+      <li><div class="row"><span>Teaching Assistant, <i>IE 533 Industrial Applications of Statistics</i>, Purdue University</span><span class="when">Spring 2026</span></div></li>
+      <li><div class="row"><span>Teaching Assistant, <i>IE 530 / STAT 513 Quality Control</i>, Purdue University</span><span class="when">Fall 2025</span></div></li>
+      <li><div class="row"><span>Guest Lecturer, <i>ISyE 3039 Methods for Quality Improvement</i>, Georgia Tech: &ldquo;Introduction to Multivariate Process Monitoring&rdquo;</span><span class="when">Spring 2025</span></div></li>
+      <li><div class="row"><span>Guest Lecturer, <i>IE 590 Machine Learning and its Applications</i>, Purdue University</span><span class="when">Fall 2023</span></div></li>
+      <li><div class="row"><span>Certificate in Foundations of College Teaching, Purdue University</span><span class="when">2026</span></div></li>
+    </ul>
+    <p class="note">Teaching interests: applied engineering statistics, quality control and statistical process control, design of experiments, machine learning for engineers, and AI-enabled quality and process analytics.</p>
+  </section>
+
+  <section id="mentoring">
+    <h2>Mentoring &amp; Outreach</h2>
+    <ul class="plain">
+      <li>Research mentor to undergraduate students from Purdue University (Statistics) and Universidad EAFIT, Colombia (Applied Mathematics) on personalized mental health prediction with mobile sensing data, in collaboration with Dr. Louis Tay.</li>
+      <li>Volunteer mentor, Data Science in Bioengineering Workshop for high school students, Purdue University (2024).</li>
+      <li>Volunteer mentor, Introduce a Girl to Engineering Day, Purdue University (2023).</li>
+    </ul>
+  </section>
+
+  <section id="awards">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="plain">
+      <li>IISE Future Faculty Fellow, Institute of Industrial and Systems Engineers (2025)</li>
+      <li>TRAvel for CollaborativE Research (TRACER) Grant, Purdue University (2025)</li>
+      <li>SPES+Q&amp;P Student Paper Competition Winner, American Statistical Association (2024)</li>
+      <li>Lee A. Chaden Fellowship in Industrial Engineering, Purdue University (2022&ndash;2023)</li>
+      <li>Ross Fellowship, Purdue University (2022&ndash;2023)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Edwardson School of Industrial Engineering, Purdue University<br>
+      315 N. Grant Street, West Lafayette, IN 47907, USA<br>
+      <a href="mailto:jiang905@purdue.edu">jiang905@purdue.edu</a></p>
+  </section>
+</main>
+
+<footer>Last updated October 2026.</footer>
+</body>
+</html>
